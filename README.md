@@ -1,2 +1,2 @@
-# piskvorky01
+# piskvorky
 První povinný domácí úkol.
