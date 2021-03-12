@@ -12,6 +12,7 @@ Tlačítko Začít hrát  #0197f6. Po najetí  #0090e9.
 /* Do výšky a šířky prvku se bude počítat padding a border (rámeček) */
 html {
   box-sizing: border-box;
+  min-height: 100%; /** Aby pozadí bylo přes celý viewport **/
 }
 
 /* Obrázek v hlavičce má po změření v Adobe xd výššku 220 px a šířku 360 px. */
@@ -19,8 +20,8 @@ html {
   width: 360px;
   border-top-left-radius: 10px; /* Zaoblení rohů obrázku nahoře cca 10px.*/
   border-top-right-radius: 10px;
-  margin-top: 50px;
-  margin-bottom: 0px;
+  display: block;
+  margin: 50px auto 0;
 }
 
 /* Body - celé má pozadí v přechodu z fialové #615dad do růžové #ffc8da*/
@@ -31,16 +32,17 @@ body {
   font-family: Arial, Helvetica, sans-serif; /* Text je bezpatkový, Arial. */
   font-size: 17px; /* Velikost podle Adobe xd asi 15px, ale podle prohlížeče větší. */
   text-align: center; /* Text je zarovnán na střed. */
+  margin: 50px 0 0;
 }
 
 .obsah h1 {
   font-family: 'Lobster', cursive;
   font-size: 37px; /* Podle Adobe xd asi 37 px. */
-  margin: 30px 0px; /* Odsazení od nadpisu asi 30px nahoře a 30 px dole, ALE ZE STRAN 0px */
+  margin: 0 0 30px; /* Odsazení od nadpisu asi 30px nahoře a 30 px dole, ALE ZE STRAN 0px */
 }
 
 .obsah {
-  padding: 0 10px;
+  padding: 30px 10px 0;
 }
 
 /* Pozadí za textem je tmavě modré #283e50. */
