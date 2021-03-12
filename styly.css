@@ -1,0 +1,52 @@
+/* Poznámky ke grafice
+Nadpis Piškvorky je fontem Lobster. Najdeš ho zdarma na Google Fonts. DONE
+Různé vzdálenosti, velikosti textu odhadni od oka nebo přesně změř na obrázku výše. DONE
+Gradient v pozadí jde z fialové  #615dad do růžové  #ffc8da. DONE
+Další barvy, které se ti budou hodit:
+Barva textu  #ffffff. DONE
+Podkladová tmavě modrá  #283e50. DONE
+Tlačítko Pravidla  #1fcca4. A po najetí myši  #1cbb96.
+Tlačítko Začít hrát  #0197f6. Po najetí  #0090e9.
+Úvodní text nemusíš opisovat. Stačí ho zkopírovat zde: Piškvorky jsou velmi oblíbená společenská hra pro dva hráče. Obvykle se hraje s tužkou a čtverečkovaným papírem. Nyní můžete využít naši skvělou aplikaci, takže už nepotřebujete ani tužku a nemusíte hledat čtverečkovaný papír. Přejeme vám hodně zábavy! */
+
+/* Do výšky a šířky prvku se bude počítat padding a border (rámeček) */
+html {
+  box-sizing: border-box;
+}
+
+/* Obrázek v hlavičce má po změření v Adobe xd výššku 220 px a šířku 360 px. */
+.obrhlavicka {
+  width: 360px;
+  border-top-left-radius: 10px; /* Zaoblení rohů obrázku nahoře cca 10px.*/
+  border-top-right-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+/* Body - celé má pozadí v přechodu z fialové #615dad do růžové #ffc8da*/
+body {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat; /* Aby se neopakoval přechod barev. */
+  color: #ffffff; /* Barva textu v celém dokumentu #ffffff. */
+  font-family: Arial, Helvetica, sans-serif; /* Text je bezpatkový, Arial. */
+  font-size: 17px; /* Velikost podle Adobe xd asi 15px, ale podle prohlížeče větší. */
+  text-align: center; /* Text je zarovnán na střed. */
+}
+
+.obsah h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 37px; /* Podle Adobe xd asi 37 px. */
+  margin: 30px 0px; /* Odsazení od nadpisu asi 30px nahoře a 30 px dole, ALE ZE STRAN 0px */
+}
+
+.obsah {
+  padding: 0 10px;
+}
+
+/* Pozadí za textem je tmavě modré #283e50. */
+.kontejner {
+  background-color: #283e50;
+  width: 360px; /* Vše je na šířku obrázku, tj. 360 px. */
+  margin: auto; /* Odsazení pod textem asi 40 px, zarovnání BLOKU na střed (margin: auto).*/
+  padding-bottom: 30px;
+}
