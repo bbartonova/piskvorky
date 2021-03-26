@@ -147,32 +147,27 @@ figcaption {
   .main--pravidla {
     width: 800px;
     margin: auto;
+    max-width: 100%; /* Aby to na menších px než 800 nepřetékalo. */
   }
 
   figure {
+    flex: 0 0 50%;
     max-width: 50%;
-    min-width: 278px;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 15px;
   }
 
   .pravidlaObrazky {
     display: flex;
     flex-wrap: wrap;
+    padding: 15px;
   }
 }
 
 /* Media query - Velmi široká obrazovka (vycházela jsem původně z úzké - mobilní obrazovky, zde je druhý breakpoint. Neliší se od široké, ale má mít omezenou šířku. */
 @media only screen and (min-width: 1280px) {
   .main--pravidla {
-    width: 800px;
-    margin: auto;
-  }
-
-  .pravidlaObrazky {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  figure {
-    max-width: 45%;
+    max-width: max-content;
   }
 }
