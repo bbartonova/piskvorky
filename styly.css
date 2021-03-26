@@ -18,6 +18,7 @@ html {
 /* Obrázek v hlavičce má po změření v Adobe xd výššku 220 px a šířku 360 px. */
 .obrhlavicka {
   width: 360px;
+  max-width: 100%; /* Dořešení přetékání. */
   border-top-left-radius: 5px; /* Zaoblení rohů obrázku nahoře cca 10px.*/
   border-top-right-radius: 5px;
   display: block;
@@ -51,6 +52,7 @@ body {
 .kontejner {
   background-color: #283e50;
   width: 360px; /* Vše je na šířku obrázku, tj. 360 px. */
+  max-width: 100%; /* Dořešení přetékání. */
   margin: auto; /* Odsazení pod textem asi 40 px, zarovnání BLOKU na střed (margin: auto).*/
 }
 
