@@ -32,7 +32,9 @@ body {
   font-family: Arial, Helvetica, sans-serif; /* Text je bezpatkový, Arial. */
   font-size: 16px; /* Velikost podle Adobe xd asi 15px, ale podle prohlížeče větší. */
   text-align: center; /* Text je zarovnán na střed. */
-  margin: 50px 0 0;
+  margin: 50px 0 16px 0;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .obsah h1 {
@@ -88,11 +90,11 @@ body {
 
 .main--pravidla {
   background-color: #283e50;
-  width: 360px; /* Šířka stejná jako u hlavičky na indexu, ze kterého zde vycházím. */
+  width: 100%; /* Aby to nepřetékalo u telefonu s 320px. */
   border-top-left-radius: 5px; /* Zaoblení rohů obrázku nahoře cca opět 5px.*/
   border-top-right-radius: 5px;
   display: block;
-  margin: 50px auto 0;
+  margin: 0 auto 0;
 }
 
 .main--pravidla h1 {
@@ -141,10 +143,12 @@ figcaption {
 }
 
 /* Media query - Široká obrazovka (vycházelo se původně z úzké - mobilní obrazovky, zde je první breakpoint. Tohle by měly být tablety. */
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 768px) {
   .main--pravidla {
-    min-width: 90%;
+    width: 800px;
+    margin: auto;
   }
+
   figure {
     max-width: 50%;
     min-width: 278px;
@@ -157,9 +161,10 @@ figcaption {
 }
 
 /* Media query - Velmi široká obrazovka (vycházela jsem původně z úzké - mobilní obrazovky, zde je druhý breakpoint. Neliší se od široké, ale má mít omezenou šířku. */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1280px) {
   .main--pravidla {
-    min-width: 750px;
+    width: 800px;
+    margin: auto;
   }
 
   .pravidlaObrazky {
