@@ -166,8 +166,4 @@ figcaption {
 }
 
 /* Media query - Velmi široká obrazovka (vycházela jsem původně z úzké - mobilní obrazovky, zde je druhý breakpoint. Neliší se od široké, ale má mít omezenou šířku. */
-@media only screen and (min-width: 1280px) {
-  .main--pravidla {
-    max-width: max-content;
-  }
-}
+/* @media only screen and (min-width: 1280px) {} - není třeba, náhledy odpovídají zadání. */
