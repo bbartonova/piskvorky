@@ -88,6 +88,16 @@ body {
   background-color: #0090e9;
 }
 
+.uvodni {
+  background-color: #1fcca4;
+  border-bottom: 1px solid #283e50; /* Mezi tlačítky je černá čára - tmavé ohraničení. */
+}
+
+/* Po stisknutí tlačítko ztmavne. :hover*/
+.uvodni:hover {
+  background-color: #1cbb96;
+}
+
 /* Styly stránky s Pravidly*/
 
 .main--pravidla {
