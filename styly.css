@@ -179,3 +179,102 @@ figcaption {
 
 /* Media query - Velmi široká obrazovka (vycházela jsem původně z úzké - mobilní obrazovky, zde je druhý breakpoint. Neliší se od široké, ale má mít omezenou šířku. */
 /* @media only screen and (min-width: 1280px) {} - není třeba, náhledy odpovídají zadání. */
+
+/* Třetí úkol - stylování hra.html */
+
+/* V tomto úkolu nebudeš potřebovat @media query. Hlavnímu obsahu nastav maximální šířku pomocí max-width: 80vmin. Stránka se tak bude lépe přízpůsobovat širokoúhlým obrzovkám i telefonům na výšku. */
+
+.hra {
+  max-width: 80vmin;
+  color: #ffffff;
+  margin: 2rem auto;
+}
+
+.nadpis {
+  font-family: 'Lobster', cursive;
+  font-size: 60px; /* Asi 60 px. */
+  margin: 0 0 10px; /* Odsazení od nadpisu asi 10px nahoře a 10 px dole, ALE ZE STRAN 0px */
+}
+
+.navigace--vlevo {
+  display: flex;
+  align-items: center;
+  margin: 0%;
+}
+
+.circle {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  filter: invert(100%);
+  margin-left: 10px;
+}
+
+.navigace {
+  display: flex;
+  justify-content: space-between;
+  margin: 1px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navigace--vpravo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 0;
+  width: calc((100% - 1rem) / 3);
+}
+
+.ikona--home {
+  background-color: #1fcca4;
+  display: block;
+  margin: 0 3%;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+.ikona--home:hover,
+.ikona--home:focus {
+  background-color: #1cbb96;
+}
+
+.ikona--restart {
+  background-color: #0197f6;
+  margin-left: 0.3rem;
+  display: block;
+  margin: 0 3%;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+.ikona--restart:hover,
+.ikona--restart:focus {
+  background-color: #0090e9;
+}
+
+.mrizka {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vmin;
+  margin-top: 1rem;
+  background: rgb(229, 182, 210);
+  background: linear-gradient(
+    10deg,
+    rgba(229, 182, 210, 1) 0%,
+    rgba(178, 148, 196, 1) 100%
+  );
+}
+.policko {
+  width: 10%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid black;
+}
+.policko:hover,
+.policko:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+}
