@@ -16,7 +16,7 @@ const hrajeme = (event) => {
     // Výchozí rámeček, který se objevuje po kliknutí na tlačítko, není potřeba stylovat. Může se uživateli hodit pro snazší ovládání z klávesnice.
 
     // Změň hodnotu proměnné z 'circle' na 'cross', případně z 'cross' na 'circle'.
-  } else if (praveHraje === 'cross') {
+  } else if (kdoHraje === 'cross') {
     event.target.classList.add('board__field--cross');
     event.target.disabled = true;
     document.querySelector('.hraje').src = 'circle.svg';
