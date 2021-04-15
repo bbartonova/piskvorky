@@ -271,6 +271,7 @@ figcaption {
   /* Úkol 4 - Bonus: Pomocí animací přidej symbolům efekt postupného zvětšení. V náhledu je animace zpomalená z času 0.15s na 0.45s, aby bylo lépe vidět, jak má vypadat. Ve výsledku použij kratší čas. */
   background-size: 0%;
   transition: 0.25s;
+  background-position: center center;
 }
 .policko:hover,
 .policko:focus {

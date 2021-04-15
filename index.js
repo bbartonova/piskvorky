@@ -5,9 +5,6 @@ let kdoHraje = 'circle';
 
 const hrajeElement = document.querySelector('.hraje');
 
-// pracujeme se všemi políčky
-const fieldButton = document.querySelector('.policko');
-
 const hrajeme = (event) => {
   if (kdoHraje === 'circle') {
     event.target.classList.add('board__field--circle'); // Přidej políčku příslušnout třídu podle toho, kdo je zrovna na tahu. Například board__field--circle, resp. board__field--cross. - viz CSS
