@@ -3,6 +3,8 @@
 
 let kdoHraje = 'circle';
 
+const hrajeElement = document.querySelector('.hraje');
+
 // pracujeme se všemi políčky
 const fieldButton = document.querySelector('.policko');
 
@@ -10,7 +12,7 @@ const hrajeme = (event) => {
   if (kdoHraje === 'circle') {
     event.target.classList.add('board__field--circle'); // Přidej políčku příslušnout třídu podle toho, kdo je zrovna na tahu. Například board__field--circle, resp. board__field--cross. - viz CSS
     event.target.disabled = true; //Bonus: Zamez, aby se na již vyplněná políčka nešlo dostat klávesou tab přidáním atributu disabled.
-    document.querySelector('.hraje').src = 'cross.svg'; // Uprav v levém horním rohu výpis, kdo je na tahu.
+    hrajeElement.src = 'cross.svg'; // Uprav v levém horním rohu výpis, kdo je na tahu.
     kdoHraje = 'cross'; //začínají vždy kolečka, jakmile odehrají, tak křížky
 
     // Výchozí rámeček, který se objevuje po kliknutí na tlačítko, není potřeba stylovat. Může se uživateli hodit pro snazší ovládání z klávesnice.
@@ -19,7 +21,7 @@ const hrajeme = (event) => {
   } else if (kdoHraje === 'cross') {
     event.target.classList.add('board__field--cross');
     event.target.disabled = true;
-    document.querySelector('.hraje').src = 'circle.svg';
+    hrajeElement.src = 'circle.svg';
     kdoHraje = 'circle'; // po křížcích vždy hrají kolečka
   }
 };
